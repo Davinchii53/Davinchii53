@@ -1,10 +1,9 @@
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Space+Grotesk&weight=600&size=30&duration=3000&color=00F0FF&center=true&vCenter=true&width=600&lines=Welcome+to+the+mainframe.;Systems+online.+Initializing...;Building+the+future." alt="Typing SVG" />
-  
-  <br />
-  
-  ### ⚡ TERMINAL ACCESS GRANTED ⚡
-  _Architecting digital solutions in the dark._
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Davinchii53/Davinchii53/main/terminal.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Davinchii53/Davinchii53/main/terminal.svg">
+    <img src="https://raw.githubusercontent.com/Davinchii53/Davinchii53/main/terminal.svg" alt="Holographic Terminal" />
+  </picture>
 </div>
 
 ---
