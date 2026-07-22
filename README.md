@@ -1,8 +1,7 @@
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Davinchii53/Davinchii53/main/terminal.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Davinchii53/Davinchii53/main/terminal.svg">
-    <img src="https://raw.githubusercontent.com/Davinchii53/Davinchii53/main/terminal.svg" alt="Holographic Terminal" />
+    <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/Davinchii53/Davinchii53/main/terminal-mobile.svg">
+    <img src="https://raw.githubusercontent.com/Davinchii53/Davinchii53/main/terminal-desktop.svg" alt="Holographic Terminal" />
   </picture>
 </div>
 
