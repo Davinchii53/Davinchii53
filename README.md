@@ -26,7 +26,7 @@
 <br />
 
 ### 🌐 HOLO-GRAPHIC ACTIVITY MAP
-> **Note:** You will need to run the `GitHub-Profile-3D-Contrib` and `Generate Snake Animation` workflows in the "Actions" tab of this repository once for these holographic graphs to appear!
+> **Note:** You will need to run the `GitHub-Profile-3D-Contrib` workflow in the "Actions" tab of this repository once for these holographic graphs to appear!
 
 <div align="center">
   <picture>
@@ -36,12 +36,4 @@
   </picture>
 </div>
 
-<br />
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Davinchii53/Davinchii53/main/dist/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Davinchii53/Davinchii53/main/dist/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Davinchii53/Davinchii53/main/dist/github-contribution-grid-snake-dark.svg">
-  </picture>
-</div>
