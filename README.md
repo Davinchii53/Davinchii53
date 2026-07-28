@@ -8,17 +8,16 @@
 ---
 
 <div align="center">
-  <!-- ponytail: static CDN badges avoid third-party Vercel/Heroku API latency and CPU overhead -->
-  ![TypeScript](https://img.shields.io/badge/TypeScript-00F0FF?style=for-the-badge&logo=typescript&logoColor=0D1117)
-  ![Python](https://img.shields.io/badge/Python-FF0055?style=for-the-badge&logo=python&logoColor=white)
-  ![JavaScript](https://img.shields.io/badge/JavaScript-F1E05A?style=for-the-badge&logo=javascript&logoColor=black)
-  ![Dart](https://img.shields.io/badge/Dart-00B4AB?style=for-the-badge&logo=dart&logoColor=white)
+  <!-- ponytail: static CDN shields avoid Vercel/Heroku API latency and CPU overhead -->
+  <img src="https://img.shields.io/badge/TypeScript-00F0FF?style=for-the-badge&amp;logo=typescript&amp;logoColor=0D1117" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Python-FF0055?style=for-the-badge&amp;logo=python&amp;logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/JavaScript-F1E05A?style=for-the-badge&amp;logo=javascript&amp;logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Dart-00B4AB?style=for-the-badge&amp;logo=dart&amp;logoColor=white" alt="Dart" />
 </div>
 
 <br />
 
 ### 🌐 HOLO-GRAPHIC ACTIVITY MAP
-> **Note:** You will need to run the `GitHub-Profile-3D-Contrib` workflow in the "Actions" tab of this repository once for these holographic graphs to appear!
 
 <div align="center">
   <picture>
