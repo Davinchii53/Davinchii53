@@ -79,9 +79,16 @@ def generate_svg(is_mobile=False):
     .bg {{ fill: #0d1117; }}
     .text {{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: {font_size}px; font-weight: bold; }}
     .terminal-border {{ fill: none; stroke: #00F0FF; stroke-width: 2; opacity: 0.5; }}
+    .terminal-border-glow {{ fill: none; stroke: #00F0FF; stroke-width: 6; opacity: 0.15; }}
+    .scanner {{ stroke: #00F0FF; stroke-width: 2; opacity: 0.35; animation: scan 10s infinite linear; }}
     .info-title {{ fill: #FF0055; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-weight: bold; font-size: 18px; letter-spacing: 1px; }}
     .info-text {{ fill: #FFFFFF; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-size: 16px; }}
     .info-label {{ fill: #00F0FF; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-size: 16px; font-weight: bold; }}
+    @keyframes scan {{
+      0% {{ transform: translateY(0px); }}
+      50% {{ transform: translateY({svg_height - 20}px); }}
+      100% {{ transform: translateY(0px); }}
+    }}
     @keyframes flicker {{
       0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {{ opacity: 1; }}
       20%, 24%, 55% {{ opacity: 0.6; }}
@@ -89,16 +96,19 @@ def generate_svg(is_mobile=False):
     .hologram {{ animation: flicker 6s infinite; }}
   </style>
   <rect class="bg" width="{svg_width}" height="{svg_height}" />
+  <rect class="terminal-border-glow" x="10" y="10" width="{border_width}" height="{border_height}" rx="5" />
   <rect class="terminal-border" x="10" y="10" width="{border_width}" height="{border_height}" rx="5" />
+  <line class="scanner" x1="10" y1="10" x2="{svg_width - 10}" y2="10" />
   <g class="hologram" transform="translate(20, 50)">
 """
     for idx, line in enumerate(ascii_lines):
-        svg_content += f'    <text class="text" xml:space="preserve" x="0" y="{idx * line_height}">{line}</text>\\n'
+        svg_content += f'    <text class="text" xml:space="preserve" x="0" y="{idx * line_height}">{line}</text>\n'
 
     svg_content += f"""
   </g>
   <g transform="translate({right_panel_x}, {right_panel_y})">
     <text class="info-title" x="0" y="0">SYSTEM.INFO // RESEARCH.SCHOLAR</text>
+    <path d="M0 15 L350 15" stroke="#FF0055" stroke-width="3" stroke-dasharray="4" opacity="0.15" />
     <path d="M0 15 L350 15" stroke="#FF0055" stroke-width="1" stroke-dasharray="4" opacity="0.5" />
     <text class="info-label" x="0" y="45">Role:</text>
     <text class="info-text" x="120" y="45">Digital Architect &amp; Dev</text>
@@ -107,12 +117,14 @@ def generate_svg(is_mobile=False):
     <text class="info-label" x="0" y="95">Status:</text>
     <text class="info-text" x="120" y="95">Researching / Building</text>
     <text class="info-title" x="0" y="150">RESEARCH.NODE</text>
+    <path d="M0 165 L350 165" stroke="#FF0055" stroke-width="3" stroke-dasharray="4" opacity="0.15" />
     <path d="M0 165 L350 165" stroke="#FF0055" stroke-width="1" stroke-dasharray="4" opacity="0.5" />
     <text class="info-label" x="0" y="195">Primary:</text>
     <text class="info-text" x="120" y="195">Autonomous Systems</text>
     <text class="info-label" x="0" y="220">Direction:</text>
     <text class="info-text" x="120" y="220">Multi-agent systems</text>
     <text class="info-title" x="0" y="275">BUILD.LOG</text>
+    <path d="M0 290 L350 290" stroke="#FF0055" stroke-width="3" stroke-dasharray="4" opacity="0.15" />
     <path d="M0 290 L350 290" stroke="#FF0055" stroke-width="1" stroke-dasharray="4" opacity="0.5" />
     <text class="info-label" x="0" y="320">NodeAI:</text>
     <text class="info-text" x="120" y="320">Intelligent wallet</text>
@@ -121,6 +133,7 @@ def generate_svg(is_mobile=False):
     <text class="info-label" x="0" y="370">Quorum:</text>
     <text class="info-text" x="120" y="370">Agent coordination</text>
     <text class="info-title" x="0" y="425">GRID.LINKS</text>
+    <path d="M0 440 L350 440" stroke="#FF0055" stroke-width="3" stroke-dasharray="4" opacity="0.15" />
     <path d="M0 440 L350 440" stroke="#FF0055" stroke-width="1" stroke-dasharray="4" opacity="0.5" />
     <text class="info-label" x="0" y="470">GitHub:</text>
     <text class="info-text" x="120" y="470">github.com/Davinchii53</text>
