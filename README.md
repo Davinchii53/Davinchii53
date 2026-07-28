@@ -8,18 +8,11 @@
 ---
 
 <div align="center">
-  <a href="https://github.com/Davinchii53">
-    <img src="https://github-readme-stats.vercel.app/api?username=Davinchii53&show_icons=true&theme=synthwave&hide_border=true&title_color=00F0FF&icon_color=FF0055&text_color=FFFFFF&bg_color=0D1117" alt="GitHub Stats" />
-  </a>
-  <a href="https://github.com/Davinchii53">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Davinchii53&layout=compact&theme=synthwave&hide_border=true&title_color=00F0FF&text_color=FFFFFF&bg_color=0D1117" alt="Top Languages" />
-  </a>
-</div>
-
-<br />
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Davinchii53&theme=synthwave&hide_border=true&background=0D1117&ring=00F0FF&fire=FF0055&currStreakNum=FFFFFF" alt="GitHub Streak" />
+  <!-- ponytail: static CDN badges avoid third-party Vercel/Heroku API latency and CPU overhead -->
+  ![TypeScript](https://img.shields.io/badge/TypeScript-00F0FF?style=for-the-badge&logo=typescript&logoColor=0D1117)
+  ![Python](https://img.shields.io/badge/Python-FF0055?style=for-the-badge&logo=python&logoColor=white)
+  ![JavaScript](https://img.shields.io/badge/JavaScript-F1E05A?style=for-the-badge&logo=javascript&logoColor=black)
+  ![Dart](https://img.shields.io/badge/Dart-00B4AB?style=for-the-badge&logo=dart&logoColor=white)
 </div>
 
 <br />
