@@ -22,7 +22,7 @@
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Davinchii53/Davinchii53/main/profile-3d-contrib/profile-night-rainbow.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Davinchii53/Davinchii53/main/profile-3d-contrib/profile-green-animate.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Davinchii53/Davinchii53/main/profile-3d-contrib/profile-green.svg">
     <img alt="3D Contribution Graph" src="https://raw.githubusercontent.com/Davinchii53/Davinchii53/main/profile-3d-contrib/profile-night-rainbow.svg">
   </picture>
 </div>
