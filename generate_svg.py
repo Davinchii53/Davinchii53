@@ -82,10 +82,15 @@ def generate_svg(is_mobile=False):
     .info-title {{ fill: #FF0055; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-weight: bold; font-size: 18px; letter-spacing: 1px; }}
     .info-text {{ fill: #FFFFFF; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-size: 16px; }}
     .info-label {{ fill: #00F0FF; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-size: 16px; font-weight: bold; }}
+    @keyframes flicker {{
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {{ opacity: 1; }}
+      20%, 24%, 55% {{ opacity: 0.6; }}
+    }}
+    .hologram {{ animation: flicker 6s infinite; }}
   </style>
   <rect class="bg" width="{svg_width}" height="{svg_height}" />
   <rect class="terminal-border" x="10" y="10" width="{border_width}" height="{border_height}" rx="5" />
-  <g transform="translate(20, 50)">
+  <g class="hologram" transform="translate(20, 50)">
 """
     for idx, line in enumerate(ascii_lines):
         svg_content += f'    <text class="text" xml:space="preserve" x="0" y="{idx * line_height}">{line}</text>\\n'
